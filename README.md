@@ -25,3 +25,20 @@ To register the change to git you need the following:
 `git commit -m "some message"`.  A comment is required so you just have to live with it.
 
 `git push origin master`. DOnt worry about origin. its just incantation as far as you are concerend for now.
+
+
+
+#checkout
+
+`git checkout ` allows you to traverse the your ocmmmit tree.
+
+But honestly you will just be using it to reset your changes to top of tree.
+
+To go back to an old hash:
+
+`git checkout <hash>`
+
+The more practical use case:
+TO undo all the changes you did to a file:
+`git checkout <filename>`. This will revert a file to top of tree.
+`git checkout` by itself will revert your entire repo to top of tree. be pretty careful about this.
